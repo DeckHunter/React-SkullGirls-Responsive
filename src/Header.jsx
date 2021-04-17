@@ -11,7 +11,7 @@ function Header() {
                     <li><img src={img} alt="logo"/></li>
                     <li><a href="#Characters">Characters</a></li>
                     <li><a href="#Trailer">Trailer</a></li>
-                    <li><a href="#Footer">Footer</a></li>
+                    <li><a href="#Footer">About</a></li>
                 </ul>
             </nav>
         </div>
