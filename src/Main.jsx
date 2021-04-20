@@ -11,11 +11,37 @@ import Parasoul from './img/Parasoul.png'
 import Cerebella from './img/Cerebella.jpg'
 import Double from './img/Double.jpg'
 import Beowulf from './img/Beowulf.png'
+import Squigly from './img/Squigly.png'
+import Big_Band from './img/Big_Band.png'
+import Peacock from './img/Peacock.png'
+import Robo_Fortune from './img/Robo-fortune.png'
+import fight_1 from './img/fight_1.jpg'
+import fight_2 from './img/fight_2.jpg'
+import ui from './video/Skullgirls Encore - Launch Trailer.mp4'
 
 function Main() {
     return(
         <div className = 'l-main'>
+            <div className="about-game">
+                    <h1>About The Game</h1>
+                    <p>Skullgirls 2nd Encore is a beautiful, fast-paced 
+                        and critically acclaimed 2D fighting game that puts players 
+                        out of control of fierce warriors in an extraordinary Dark Deco world. 
+                        Each of the 14 incredibly original characters has unique gameplay 
+                        mechanics and a lot of personality.
+                    </p>
+                    <p>Skullgirls is the perfect fighting game for 
+                        casual fans and fighting game contestants. 
+                        It includes a story mode entirely with voices, wonderful 
+                        animation and soundtrack by Michiru Yamane.
+                    </p>  
+                    <div className="about-game-img">
+                        <div><img src={fight_1} alt="fight_1"/></div>
+                        <div><img src={fight_2} alt="fight_2"/></div>
+                    </div>           
+            </div>
             <section id="Characters">
+                <h1>Playable Characters</h1>
                 <div className="Characters">
                     <div className="teste">
                         <div className="item">
@@ -175,13 +201,88 @@ function Main() {
                             <div className='main-img-div'>
                                 <img src={Beowulf} alt="Beowulf"/>
                             </div>
-                        </div>  
+                        </div> 
+
+                        <div className="item">
+                            <p>After reawakening in New Meridian, Squigly 
+                                sees Marie attacking an airship containing 
+                                a fleeing Lorenzo Medici with part of a building. 
+                                Her musings on Marie's apparent desire to protect 
+                                the innocent bystanders while focusing her rage on the 
+                                Medici Mafia were interrupted by the arrival of Parasoul 
+                                and the Black Egrets, who (somewhat correctly) identified 
+                                her as one of the Skullgirl's minions. After fighting 
+                                Parasoul off, Squigly fled the scene, but not before using 
+                                an apparition-like copy of herself to suggest that the 
+                                Canopy Kingdom princess focus her attention on Marie and 
+                                her active minions.
+                            </p>
+                            <div className='main-img-div'>
+                                <img src={Squigly} alt="Squigly"/>
+                            </div>
+                        </div> 
+
+                        <div className="item">
+                            <p>Ben Birdland has seen a lot in his time, 
+                                including the worst of the Grand War. 
+                                But nothing was worse than what he saw 
+                                as a beat cop in New Meridian. When he 
+                                ran afoul of his crooked unit, he was given a 
+                                violent early retirement, and his broken 
+                                body was left to spend the rest of its days 
+                                in an iron lung. His good friend, Irvin 
+                                does not betray him however.
+                            </p>
+                            <div className='main-img-div'>
+                                <img src={Big_Band} alt="Big Band"/>
+                            </div>
+                        </div> 
+                        <div className="item">
+                            <p>Patricia once lived with Marie in an orphanage, 
+                                which was originally a nobleman's house, in Rommelgrad. 
+                                Having to make do with what was available, 
+                                both girls used to dress in maid outfits that they 
+                                found within the house. At some point, they were 
+                                captured by slave traders, but because Patricia was 
+                                too defiant to be a slave, she was mutilated as an 
+                                example to the others: Her eyes were gouged out, and 
+                                she was also maimed.
+                            </p>
+                            <div className='main-img-div'>
+                                <img src={Peacock} alt="Peacock"/>
+                            </div>
+                        </div> 
+                        <div className="item">
+                            <p>After defeating Marie , Robo-Fortune retrieves 
+                                the Skull Heart and delivers it to Brain Drain, 
+                                who is surprised that she actually succeeded. 
+                                Brain Drain then sets about creating a new 
+                                generation of machines using the Skull Heart. 
+                                His experiments give rise to an army of giant 
+                                Robo-Fortunes who, without a Skullgirl to hunt, 
+                                turn on humanity. With the Canopy Kingdom in ruins, 
+                                Annie, Stanley and Adam lead a group of survivors 
+                                (potential DLC characters from the Indiegogo campaign 
+                                which were not chosen) against the invading army, 
+                                aiming to slow them down for as long as possible. 
+                                Meanwhile, Aeon and Venus, seeing their job being done for 
+                                them, give each other a high five.
+                            </p>
+                            <div className='main-img-div'>
+                                <img src={Robo_Fortune} alt=" Robo-Fortune"/>
+                            </div>
+                        </div> 
                     </div>
-                          
                 </div>
             </section>
-            <section id="Trailer">
-            
+            <section id="Boss"></section>
+            <section id="Treiler">
+                <h1>Treiler</h1>
+                <div className="vidio">
+                    <video controls >
+                            <source src={ui} type="video/mp4"/>
+                        </video>
+                    </div>      
             </section>
         </div>
     )
