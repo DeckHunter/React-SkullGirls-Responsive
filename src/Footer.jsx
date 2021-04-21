@@ -5,7 +5,7 @@ import './normalize.css'
 function Footer() {
     return(
         <div className = 'l-footer'>
-            <section id="Footer"></section>
+           
         </div>
     )
 }

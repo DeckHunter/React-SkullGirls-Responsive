@@ -19,6 +19,20 @@ import fight_1 from './img/fight_1.jpg'
 import fight_2 from './img/fight_2.jpg'
 import ui from './video/Skullgirls Encore - Launch Trailer.mp4'
 
+
+import T_Eliza from './video/Characters/Eliza.mp4'
+import T_Beowulf from './video/Characters/Beowulf.mp4'
+import T_Filia from './video/Characters/Filia.mp4'
+import T_Squigly from './video/Characters/Squigly.mp4'
+import T_Valentine from './video/Characters/Valentine.mp4'
+import T_Cerebela from './video/Characters/Cerebella.mp4'
+import T_Robo_Fortune from './video/Characters/Robo Fortune.mp4'
+import T_Peacock from './video/Characters/Peacock.mp4'
+import T_Ms_Fortune from './video/Characters/Ms. Fortune.mp4'
+import T_Big_Band from './video/Characters/Big Band.mp4'
+import T_Double from './video/Characters/Double.mp4'
+import T_PainWheel from './video/Characters/Painwheel.mp4'
+
 function Main() {
     return(
         <div className = 'l-main'>
@@ -40,11 +54,16 @@ function Main() {
                         <div><img src={fight_2} alt="fight_2"/></div>
                     </div>           
             </div>
+
             <section id="Characters">
+                <div id="Trailer" className="Trailer"> 
+                    <button onClick={Trailer}>X</button>
+                    <video id="T-Characters" controls ></video>
+                </div>
                 <h1>Playable Characters</h1>
                 <div className="Characters">
                     <div className="teste">
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('eliza')}>
                             <p>Eliza is a popular singer in New Meridian and is predominately 
                                 known for her amazing charity work, which are namely, blood drives. 
                                 Under her lavish appearance, Eliza harbors a dark secret, she carries 
@@ -59,7 +78,7 @@ function Main() {
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('filia')}>
                             <p>Filia was once just an average schoolgirl, with her 
                                 best friend being Carol before she was kidnapped. 
                                 Filia was the daughter of Amelia and Marcus Medici. 
@@ -71,11 +90,11 @@ function Main() {
                                 parasite, he wouldn't leave her for his own well being.
                             </p>
                             <div className='main-img-div'>
-                                <img src={Filia} alt="eliza"/>
+                                <img src={Filia} alt="filia"/>
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('ms.Fortune')}>
                             <p>A feline feral, Nadia Fortune is the last surviving member of 
                                 the Fishbone Gang, a notorious band of otherwise Dagonian thieves. 
                                 Their last mission ended in tragedy: a failed attempt to steal the 
@@ -89,7 +108,7 @@ function Main() {
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('valentine')}>
                             <p>Valentine lost her eye in the incident that destroyed Lab 7. 
                                 The cross in her remaining eye is result from the lab's experimental 
                                 drug test, as the team were not only in charge of the tests but test 
@@ -111,7 +130,7 @@ function Main() {
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('painwheel')}>
                             <p>Once a normal schoolgirl named Carol, 
                                 Painwheel lived in Maplecrest with her parents. 
                                 She was friends with Filia who also attended her 
@@ -124,7 +143,7 @@ function Main() {
                                 <img src={Painwheel} alt="Painwheel"/>
                             </div>
                         </div>
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('parasoul')}>
                             <p>Few know the terrors of the Skullgirl as intimately as 
                                 Parasoul does: seven years ago her own mother became the 
                                 Skullgirl that nearly destroyed the world. This tragic 
@@ -144,7 +163,7 @@ function Main() {
                             </div>
                         </div>     
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('cerebella')}>
                             <p>Cerebella has had Vice-Versa since birth, most 
                                 likely an heirloom passed down by her biological 
                                 parents. She was taught how to use the knives that she 
@@ -167,7 +186,7 @@ function Main() {
                             </div>
                         </div>     
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('double')}>
                             <p>Though her origins are vague, Double is 
                                 devoutly loyal to the Trinity, using her 
                                 shape-shifting powers to support the Trinity's ominous agenda. 
@@ -185,7 +204,7 @@ function Main() {
                             </div>
                         </div>    
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('beowulf')}>
                             <p>Known world-wide for felling the Gigan warrior 
                                 Grendel and for his illustrious career in 
                                 the ring, Beowulf had secured himself a spot 
@@ -203,7 +222,7 @@ function Main() {
                             </div>
                         </div> 
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('squigly')}>
                             <p>After reawakening in New Meridian, Squigly 
                                 sees Marie attacking an airship containing 
                                 a fleeing Lorenzo Medici with part of a building. 
@@ -222,7 +241,7 @@ function Main() {
                             </div>
                         </div> 
 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('big band')}>
                             <p>Ben Birdland has seen a lot in his time, 
                                 including the worst of the Grand War. 
                                 But nothing was worse than what he saw 
@@ -237,7 +256,7 @@ function Main() {
                                 <img src={Big_Band} alt="Big Band"/>
                             </div>
                         </div> 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('peacock')}>
                             <p>Patricia once lived with Marie in an orphanage, 
                                 which was originally a nobleman's house, in Rommelgrad. 
                                 Having to make do with what was available, 
@@ -252,7 +271,7 @@ function Main() {
                                 <img src={Peacock} alt="Peacock"/>
                             </div>
                         </div> 
-                        <div className="item">
+                        <div className="item" onClick={() => Trailer_Rodar('robo fortune')}>
                             <p>After defeating Marie , Robo-Fortune retrieves 
                                 the Skull Heart and delivers it to Brain Drain, 
                                 who is surprised that she actually succeeded. 
@@ -275,17 +294,73 @@ function Main() {
                     </div>
                 </div>
             </section>
-            <section id="Boss"></section>
-            <section id="Treiler">
-                <h1>Treiler</h1>
+
+            <section id="trailer">
+                <h1>Trailer</h1>
                 <div className="vidio">
                     <video controls >
-                            <source src={ui} type="video/mp4"/>
-                        </video>
-                    </div>      
+                        <source src={ui} type="video/mp4"/>
+                    </video>
+                </div> 
             </section>
+            
+            <section id="Boss">
+
+                <h1>Marei</h1>
+
+            </section>
+
+
         </div>
     )
+}
+
+
+function Trailer(){
+    var video = document.getElementById('T-Characters');
+    video.pause()
+    document.getElementById("Trailer").style.display = "none"
+}
+function Trailer_Rodar(id){
+    var video = document.getElementById('T-Characters');
+    document.getElementById("Trailer").style.display = "block"
+  
+    if(id === 'eliza'){
+        video.src = T_Eliza
+    }
+    else if(id === 'ms.Fortune'){
+        video.src = T_Ms_Fortune
+    }
+    else if(id === 'filia'){
+        video.src = T_Filia
+    }
+    else if(id === 'robo fortune'){
+        video.src = T_Robo_Fortune
+    }
+    else if(id === 'valentine'){
+        video.src = T_Valentine
+    }
+    else if(id === 'painwheel'){
+        video.src = T_PainWheel
+    }
+    else if(id === 'cerebella'){
+        video.src = T_Cerebela
+    }
+    else if(id === 'squigly'){
+        video.src = T_Squigly
+    }
+    else if(id === 'beowulf'){
+        video.src = T_Beowulf
+    }
+    else if(id === 'double'){
+        video.src = T_Double
+    }
+    else if(id === 'big band'){
+        video.src = T_Big_Band
+    }
+    else if(id === 'peacock'){
+        video.src = T_Peacock
+    }
 }
 
 export default Main;
