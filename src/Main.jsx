@@ -19,7 +19,6 @@ import fight_1 from './img/fight_1.jpg'
 import fight_2 from './img/fight_2.jpg'
 import ui from './video/Skullgirls Encore - Launch Trailer.mp4'
 
-
 import T_Eliza from './video/Characters/Eliza.mp4'
 import T_Beowulf from './video/Characters/Beowulf.mp4'
 import T_Filia from './video/Characters/Filia.mp4'
@@ -32,6 +31,10 @@ import T_Ms_Fortune from './video/Characters/Ms. Fortune.mp4'
 import T_Big_Band from './video/Characters/Big Band.mp4'
 import T_Double from './video/Characters/Double.mp4'
 import T_PainWheel from './video/Characters/Painwheel.mp4'
+
+import Marie_3 from './img/Marie_3.jpg'
+import Marie_2 from './img/Marie_2.png'
+import Marie_1 from './img/Marie_1.png'
 
 function Main() {
     return(
@@ -305,16 +308,29 @@ function Main() {
             </section>
             
             <section id="Boss">
-
-                <h1>Marei</h1>
-
+                <div className="boss">
+                    <h1>Boss Marie</h1>
+                    <div className="boss-img">
+                        <div><img src={Marie_3} alt="Marie_3"/></div>
+                        <div><img src={Marie_2} alt="Marie_2"/></div>
+                        <div> <img src={Marie_1} alt="Marie_1"/></div>  
+                    </div>
+                    <p>Marie hails from an area outside of the 
+                        Canopy Kingdom known as No Man's Land, a 
+                        wasteland that used to be a country but fell 
+                        during the war with the Canopy Kingdom. Along 
+                        with her friend Patricia (who would later become 
+                        the Anti-Skullgirl weapon Peacock), Marie was orphaned 
+                        during the war and forced into slavery by a group funded 
+                        by the Medici Mafia.
+                    </p>
+                </div>
             </section>
 
 
         </div>
     )
 }
-
 
 function Trailer(){
     var video = document.getElementById('T-Characters');

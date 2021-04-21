@@ -116,8 +116,6 @@ a{
     padding-top: 1vw;
 }
 .vidio{
-    border-style: solid;
-    border-color: grey;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -139,8 +137,51 @@ a{
     width: 100%;
     height: 100%;
 }
+.boss{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.boss p{
+    color: black;
+    font-size: 1.6vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 5vw;
+}
+.boss-img{
+    padding-left: 1.9vw;
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+.boss-img div img{
+    width: 100%;
+    height: 100%;
+}
 /*==========================================|Footer|==========================================*/
 .l-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+.l-footer div{
+    margin: 1vw;
+}
+.l-footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2vw;
+}
+
 
